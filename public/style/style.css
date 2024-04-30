@@ -469,3 +469,27 @@ hr{
 }
 
 /*Fin style logos*/
+
+/*Début style hover*/
+
+span:hover{
+    background-color: rgba(155,227,226,255);
+}
+
+a:hover{
+    color:hsl(180, 66%, 49%);
+}
+
+#button:hover{
+    background-color: rgba(155,227,226,255);
+}
+
+#submit:hover{
+    background-color: rgba(155,227,226,255);
+}
+
+#second_button:hover{
+    background-color: rgba(155,227,226,255);
+}
+
+/*Fin style hover*/
