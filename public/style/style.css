@@ -212,12 +212,12 @@ h5{
     position: absolute;
     display: flex;
     justify-content: center;
-    border: none;
     border-radius: 10px;
     top: 98%;
     left: 20%;
     width:45%;
     height: 7%;
+    text-indent: 5%;
 }
 
 ::placeholder{
@@ -493,3 +493,23 @@ a:hover{
 }
 
 /*Fin style hover*/
+
+/*Début style error*/
+
+#error{
+    color: hsl(0, 87%, 67%);
+    margin-left: 20%;
+    font-size: 80%;
+    font-style: italic;
+    font-family: poppins;
+    width: 15%;
+    position: absolute;
+    z-index: 1;
+    top: 105%;
+    visibility:hidden;
+}
+
+.red-placeholder::placeholder {
+    color: hsl(0, 87%, 67%);
+}
+/*Fin style error*/
