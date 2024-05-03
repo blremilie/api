@@ -97,10 +97,9 @@ h4{
     font-family: poppins;
     font-size: 40px;
     color:white;
-    margin-left: 35%;
-    margin-top: 7%;
     position: absolute;
     z-index: 1;
+    margin-bottom: 5%;
 }
 
 footer{
@@ -376,7 +375,6 @@ hr{
 
 #img_boost{
     background-color: hsl(257, 27%, 26%);
-    margin-top: 3%;
     width: 100%;
     position: absolute;
     z-index: 0;
@@ -389,6 +387,11 @@ hr{
 #boost{
     position: relative;
     z-index: 1;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
 }
 
 /*Fin style boost */
@@ -396,10 +399,7 @@ hr{
 /*Début style second_button*/
 
 #second_button{
-    position: relative;
     z-index: 1;
-    margin-top: 13%;
-    margin-left: 45%;
     font-family: poppins;
     font-weight: bold;
     background-color: hsl(180, 66%, 49%);
@@ -407,6 +407,7 @@ hr{
     padding: 1%;
     border: none;
     border-radius: 50px;
+    margin-top: 8%;
 }
 
 /*Fin style second_button */
@@ -535,8 +536,8 @@ header{
 }
 
 #image_working{
-    width: 1200px;
-    height: 800px;
+    width: 2000px;
+    height: 2000px;
 }
 
 #logo_working{
@@ -544,87 +545,193 @@ header{
     height: 100%;
     margin-left: 8%;
     margin-top: 3%;
-
 }
 
 h1{
-    font-size: 135px;
-    width: 1000px;
-    margin-left: 30%;
+    font-size: 180px;
+    width: 2000px;
     text-align: center;
     margin-top: 20%;
 }
 
 p{
-    font-size: 55px;
+    font-size: 80px;
     font-weight: 500;
-    width: 1000px;
-    margin-left: 30%;
+    width: 1500px;
+    margin-left: 50%;
     text-align: center;
     margin-top: 15%;
 }
 
 #button{
-    font-size: 50px;
-    width: 100%;
+    font-size: 100px;
+    width: 900px;
     padding: 10%;
     border-radius: 100px;
-    margin-left: 410px;
+    margin-left: 500px;
     margin-top: 20%;
 }
 
 #back{
     content: url("../images/bg-shorten-mobile.svg");
-    width: 1000px;
+    width: 1600px;
+    height: 800px;
     margin-left: 40%;
     margin-top: 25%;
     border-radius: 5%;
 }
 
 body::before{
-    top: 2300px;
+    top: 4200px;
     width: 2000px;
-    height: 2000px;
+    height: 10000px;
 }
 
 #url{
-    top: 2200px;
+    top: 4000px;
     left: 250px;
-    width: 800px;
-    height: 130px;
-    font-size: 50px;
+    width: 1500px;
+    height: 200px;
+    font-size: 100px;
     }
 
 #submit{
-    top: 2400px;
-    width: 800px;
-    height: 100px;
-    font-size: 60px;
+    top: 4300px;
+    left: 250px ;
+    width: 1500px;
+    height: 200px;
+    font-size: 100px;
     font-weight: 500;
 }
 
 h2{
-    width: 1000px;
-    font-size: 90px;
-    margin-left: 170px;
+    width: 2000px;
+    font-size: 130px;
+    margin-left: 320px;
     margin-top: 31%;
 }
 
 #paragraph_2{
-    font-size: 50px;
-    width: 1000px;
-    margin-left: 140px;
+    font-size: 80px;
+    width: 1500px;
+    margin-left: 50%;
+    text-align: center;
 }
 
 #middle{
     display: flex;
     flex-direction: column;
+    width: 3000px;
+    height: 7700px;
 }
 
 #img_logo1{
+    width: 500px;
+    padding: 80px;
+    top:5600px;
+    left: 600px;
+}
+
+#first{
+    width: 1500px;
+    height: 1800px;
+    margin-top: 10%;
+    margin-right: 35%;
+}
+
+h3{
+    font-size: 130px;
+    width: 1300px;
+    margin-left: 10%;
+}
+
+#paragraph_3{
+    font-size: 100px;
+    text-align: center;
+    width: 1500px;
+}
+
+#img_logo2{
+    width: 500px;
+    padding: 80px;
+    top: 8000px;
+    left: 590px;
+}
+
+#second{
+    width: 1500px;
+    height: 2000px;
+    margin-top: 20%;
+    margin-right: 35%;
+}
+
+#img_logo3{
+    width: 500px;
+    padding: 80px;
+    top: 10600px;
+    left: 600px;
+}
+
+#third{
+    width: 1500px;
+    height: 2000px;
+    margin-top: 20%;
+    margin-right: 35%;
+}
+
+hr{
+    border: none;
+    border-left: 1px solid hsl(180, 66%, 49%); /* Choisissez votre couleur de ligne */
+    height: 5000px;
+    width: 60px; 
+    left:980px;
+    transform: rotate(0deg); 
+}
+
+#boost{
+    content: url(../images/bg-boost-mobile.svg);
+    background-color: hsl(257, 27%, 26%);
+    width: 2000px;
+    height: 1500px;
+}
+
+h4{
     
 }
 
+footer{
+    width: 2000px;
+    height: 4500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer_logo{
+    height: 220px;
+    width: 700px;
+    margin-left: 33%;
+}
+
+h5{
+    font-size: 110px;
+    margin-left: 30%;
+}
+
+.footer{
+    font-size: 100px;
+    line-height: 1.5;
+    text-align: center;
+    margin-right: 12%;
+}
+
+#logos{
+font-size: 250px;
+}
+
+img{
+    width: 150px;
+    margin-left: 170px;
+}
 }
 
 /*Fin style responsive*/
