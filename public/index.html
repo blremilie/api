@@ -9,8 +9,11 @@
 </head>
 
 <body>
-  <nav id="nav">
+  <div id="up">
+  <nav>
       <img class="top_logo" src="./images/logo.svg" alt="logo shortly">
+      <div id="hamburger"onclick="toggleMenu()"><label id="menu">&#9776;</label></div>
+      <div id="menu">
       <ol id="option">
         <li><a href="#">Features</a></li>
         <li><a href="#">Princing</a></li>
@@ -20,29 +23,26 @@
         <li><a href="#">Login</a></li>
         <li><a href="#"><span>SignUp</span></a></li>
       </ol>
+      </div>
   </nav>
   <header>
     <div id="image_working" alt="image working">
-      <img src="./images/illustration-working.svg" id="logo_working">
+      <img src="./images/illustration-working.svg">
     </div>
     <div id="top">
     <h1>More than just shorter links</h1>
       <p>Build your brand’s recognition and get detailed insights 
         on how your links are performing.</p>
-    <button id="button" type="button"> Get Started</button>
+    <button id="first_button" type="button"> Get Started</button>
     </div>
   </header>
-    <form id="form">
-      <img src="./images/bg-shorten-desktop.svg" id="back" alt="background purple">
-      <label for="url" id="root"></label>
-      <input type="url" id="url" placeholder="Shorten a link here...">
-      <input type="submit" id="submit" value=" Shorten It!">
-      <p id="error"> Please add a link</p>
-    </form>
+  </div>
+  <div id="root"></div>
+  <div id="down">
     <h2>Advanced Statistics</h2>
       <p id="paragraph_2">Track how your links are performing across the web with our 
       advanced statistics dashboard.</p>
-      <div id="middle">
+  <div id="middle">
       <img src="./images/icon-brand-recognition.svg" id="img_logo1" alt="logo">
   <div id="first">
     <h3>Brand Recognition</h3>
@@ -63,9 +63,9 @@
   </div>
   <hr/>
   </div>
+  </div>
 
   <div id="boost">
-    <img src="./images/bg-boost-desktop.svg" id="img_boost" alt="background purple">
     <h4>Boost your links today</h4>
     <button id="second_button" type="button">Get Started</button>
   </div>
@@ -103,6 +103,8 @@
       <a href=#><img src="./images/icon-pinterest.svg" alt="icon-pinterest"></a>
       <a href=#><img src="./images/icon-instagram.svg" alt="icon-instagram"></a>
     </section>
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" defer></script>
+  </footer>
+  </div>
 </body>
 </html>
