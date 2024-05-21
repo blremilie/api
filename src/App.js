@@ -71,6 +71,7 @@ export default function App() {
                 {tabUrl.map((item, index) => (
                     <li id="li-react" key={index}>
                         <p id="item-baseUrl">{item.baseUrl}</p>
+                        <hr className="hr-react"/>
                         <p id="item-shorten">{item.shorten}</p>
                         <button type="button" id={`copy-button-${index}`} 
                         className='copy-button'

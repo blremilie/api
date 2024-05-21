@@ -110,7 +110,7 @@ h5{
 
 /*Début style top_logo*/
 
-.top_logo{
+#top_logo{
     margin-left: 5%;
 }
 
@@ -128,6 +128,14 @@ h5{
 }
 
 /*Fin style option*/
+
+/*Début style nav-hr*/
+
+#nav-hr{
+    display: none;
+}
+
+/*Fin style nav-hr*/
 
 /*Début style inscription*/
 
@@ -271,6 +279,7 @@ h5{
     height: 38%;
     width: 20%;
 }
+
 /*Fin style submit_button*/
 
 /*Début style label*/
@@ -351,6 +360,16 @@ h5{
     word-wrap: break-word;
 }
 
+/*Début style hr-react*/
+
+.hr-react{
+    display: none;
+}
+
+/*Fin style hr-react*/
+
+/*Début style item-shorten*/
+
 #item-shorten{
     color:hsl(180, 66%, 49%);
     justify-content: space-between;
@@ -358,6 +377,8 @@ h5{
     margin-left: 2%;
     word-wrap: break-word;
 }
+
+/*Fin style item-shorten*/
 
 /*Début style paragraph_2*/
 
@@ -477,7 +498,7 @@ h5{
 
 /*Début style hr*/
 
-hr{
+#hr{
     background-color:hsl(180, 66%, 49%);
     border: none;
     width: 50%;
@@ -544,16 +565,16 @@ hr{
 
 /*Fin style footer_logo*/
 
-/*Début style ol_footer*/
+/*Début style ul_footer*/
 
-.ol_footer{
+.ul_footer{
     list-style-type: none;
     padding: 0%;
     line-height: 30px;
     margin-top: 10%;
 }
 
-/*Fin style ol_footer*/
+/*Fin style ul_footer*/
 
 /*Début style features*/
 
@@ -648,91 +669,129 @@ a:hover{
 @media all and (min-width: 375px) and (max-width: 1440px) {
 
 nav{
-    width: 100%;
-    height: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 85%;
+    height: 10%;
+    margin-top: 5%;
+    align-items: center;
+}
+
+#top_logo{
+    margin-left: 0%;
+}
+
+#hamburger {
+    display: block;
+}
+
+#menu-burger{
+    background-color: white;
+    color:hsl(0, 0%, 75%);
+    font-size: 25px;
+    margin: -50%;
+}
+
+#menu {
+    display: none;
+    background-color: rgba(58,48,83,255);
+    border-radius: 20px;
+    height: 270px;
+    width: 340px;
+    position: absolute;
+    top: 80px;
 }
 
 #option{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#nav-hr{
+    display: flex;
+    color: hsl(0, 0%, 75%);
+    width: 80%;
+    height: 1%;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    margin-left: 10%;
 }
 
 #inscription{
-    display: none;
-}
-
-#menu{
-    width: 0%;
-    height: 0%;
-    font-size: 25px;
-    display: block;
-}
-
-#hamburger{
-   display: block;
-   color:hsl(0, 0%, 75%);
-}
-
-#hamburger:active{
-    display: block;
-}
-
-#menu:active{
-    width: 50%;
-    height: 20%;
-    position: absolute;
-    z-index: 1;
-    background-color:hsl(260, 8%, 14%);
-}
-
-#option :active{
     display: flex;
     flex-direction: column;
-    position: relative;
-    z-index: 2;
-} 
+    line-height: 100%;
+    width: 100% ;
+    padding: 0%;
+    margin-top: 5%;
+}
 
-#inscription :active{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
+#span{
+    width: 100%;
+    height: 1%;
+}
+
+li{
+    width: 100%;
+    height: 10%;
+    line-height: 35px;
+    font-size: 30px;
+}
+
+span{
+    padding: 2%;
+    width: 80%;
 }
 
 header{
     display: flex;
     flex-direction: column;
+}
+
+#up{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin: 0%;
 }
 
 #top{
-    margin: 0%;
     display: flex;
     align-items: center;
-    padding: 1%;
+    margin-left: 0%;
 }
 
 #image_working{
-    width: 10%;
-    height: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
 }
 
 h1{
     font-size: 40px;
     text-align: center;
+    width: 87%;
+    margin-top: 8%;
 }
 
 p{
     font-size: 20px;
     text-align: center;
+    margin-top: 5%;
 }
 
 #button{
     width: 50%;
     font-size: 25px;
     padding: 2%;
+    margin-top: 5%;
 }
 
 #form{
@@ -744,26 +803,75 @@ p{
     align-items: center;
     justify-content: space-around;
     padding: 3%;
+    margin-top: 30%;
+    width: 90%;
 }
 
 #url{
-    width: 80%;
-    height: 30%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
 }
 
-#submit{
-    width: 75%;
-    height: 30%;
+#submit_button{
+    width: 100%;
+    height: 35%;
 }
 
 #error{
     width: 50%;
-    top:45%;
-    left:-6%
+    top:40%;
+    left:-18%
+}
+
+#ul-react{
+    height: 100%;
+    width: 95%;
+    margin-left: 4%;
+    margin-top: -20%;
+    padding: 0%;
+}
+
+.hr-react{
+    display: flex;
+    margin-top: 2%;
+    width: 95%;
+    height: 2%;
+    color: hsl(0, 0%, 60%);
+}
+
+#li-react{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#item-baseUrl {
+    width: 100%;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#item-shorten{
+    margin-left: 0%;
+    margin-bottom: 2%;
+    text-align: start;
+}
+
+.copy-button{
+    width: 90%;
+    height: 10%;
+    margin-top: 2%;
+    font-size: 20px;
+    align-self: center;
 }
 
 #down{
-    margin-top: -30%;
+    margin-top: 0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -795,11 +903,11 @@ h2{
 }
 
 #img_logo1{
-    width: 25%;
-    padding: 5%;
+    width: 15%;
+    padding: 2%;
     position:absolute;
-    top: 3%;
-    left: 36%;
+    top: 5%;
+    left: 43%;
 }
 
 #first{
@@ -807,15 +915,16 @@ h2{
     border-radius: 10px;
     text-align: center;
     padding: 1%;
+    margin: 0%;
     margin-top: 20%;
 }
 
 #img_logo2{
-    width: 25%;
-    padding: 5%;
+    width: 15%;
+    padding: 2%;
     position:absolute;
-    top: 33%;
-    left: 37%;
+    top: 36%;
+    left: 42%;
 }
 
 #second{
@@ -827,11 +936,11 @@ h2{
 }
 
 #img_logo3{
-    width: 25%;
-    padding: 5%;
+    width: 15%;
+    padding: 2%;
     position:absolute;
-    top: 66%;
-    left: 2%;
+    top: 67%;
+    left: 7%;
 }
 
 #third{
@@ -848,15 +957,16 @@ h3{
     margin-left: 0%;
 }
 
-#paragraph_3{
-    font-size: 18px;
-    margin-left: 0%;
+.paragraph_3{
+    font-size: 20px;
+    margin: 0%;
 }
 
-hr{
+#hr{
     height: 50%;
     width: 2%;
-    margin-top: 80%;
+    margin-top: 60%;
+    align-items: center;
 }
 
 #boost{
@@ -888,38 +998,61 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 
 #footer_logo{
     width: 30%;
     height: 30%;
     margin-left: 0%;
+    margin-bottom: 0%;
 }
 
 h5{
     font-size: 20px;
 }
 
-.footer{
-    text-align:justify;
-}
-
 #features{
     margin-left: 0%;
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
 }
 
 #ressources{
     margin-left: 0%;
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
 }
 
 #company{
     margin-left: 0%;
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
 }
 
 #logos{
     margin-left: 0%;
     width: 50%;
     margin-bottom: 20%;
+}
+
+.footer{
+    text-align: center;
+
+}
+
+.ul_footer{
+    text-align: center;
+    margin-top: 2%;
+}
+
+a{
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
 }
 
 }
